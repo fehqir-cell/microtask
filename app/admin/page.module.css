@@ -1,0 +1,154 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  padding-top: 6rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.subtitle {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+}
+
+.section {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.disputeCard {
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.disputeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.taskTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.bountyInfo {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.currency {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoBox {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+}
+
+.infoBox h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox p {
+  color: #c0c0c0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.submissionFiles {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.submissionFiles li {
+  margin-bottom: 0.25rem;
+}
+
+.submissionFiles a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.submissionFiles a:hover {
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: #a0a0a0;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .disputeHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

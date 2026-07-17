@@ -1,0 +1,84 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 12, 16, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  flex: 1;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.link {
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.link:hover {
+  color: var(--text-main);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.roleToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: var(--surface-color);
+  border: 1px solid var(--surface-border);
+  padding: 8px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.roleToggle:hover {
+  background: var(--surface-hover);
+}
+
+.activeRole {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(76, 201, 240, 0.3);
+}
+
+.toggleDivider {
+  color: var(--surface-border);
+  font-weight: 300;
+}
